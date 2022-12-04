@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --primary-dark: hsl(300, 43%, 22%);
+  --primary-light: hsl(333, 80%, 67%);
+  --neutral-dark: hsl(303, 10%, 53%);
+  --neutral-light: hsl(300, 24%, 96%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --primary-font: 15px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: var(--primary-font);
+  background-image: url(/images/bg-pattern-top-mobile.svg),
+    url(/images/bg-pattern-bottom-mobile.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+[class*="wrapper"] {
+  width: 85%;
+  margin: 0px auto;
+}
+
+[class*="card"] {
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+path {
+  width: 14px;
+}
+
+svg {
+  margin: 0px 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  column-gap: 24px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-wrapper {
+  margin: 80px auto;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.intro {
+  align-items: center;
+  text-align: center;
+}
+
+.intro h1 {
+  color: var(--primary-dark);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 30px;
+}
+
+.intro p {
+  color: var(--neutral-dark);
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 22px;
+  font-size: 18px;
+  max-width: 400px;
+}
+
+.rating-card {
+  background-color: var(--neutral-light);
+  color: var(--primary-dark);
+  margin: 8px 0px;
+  align-items: center;
+  padding: 12px 0px;
+}
+
+.rating-card__images {
+  margin-bottom: 8px;
+}
+
+.rating-card h2 {
+  font-size: 15px;
+}
+
+.feedback-section {
+  align-items: center;
+}
+
+.feedback-card {
+  background-color: var(--primary-dark);
+  color: var(--neutral-light);
+  margin: 16px 0px;
+  width: 100%;
+  height: 234px;
+  align-items: center;
+}
+
+.feedback-card-wrapper {
+  height: 90%;
+  width: 78%;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.user-profile-image {
+  align-self: center;
+  min-width: 32px;
+  max-width: 50px;
+}
+
+.user-profile-bio {
+  align-self: center;
+}
+
+.user-profile-bio h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.user-profile-bio h3:nth-child(2) {
+  color: var(--primary-light);
+  font-weight: 400;
+}
+
+.user-review {
+  line-height: 20px;
+}
